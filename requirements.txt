@@ -7,3 +7,8 @@ print("Your Tunnel Password (IP):", urllib.request.urlopen('https://ipv4.icanhaz
 
 # 3. Expose the port 8501 using localtunnel
 !npx localtunnel --port 8501
+
+streamlit
+faster-whisper
+torch
+
