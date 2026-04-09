@@ -1,4 +1,3 @@
-%%writefile app.py
 import streamlit as st
 from faster_whisper import WhisperModel
 import os
