@@ -1,0 +1,18 @@
+import streamlit as st
+from faster_whisper import WhisperModel
+import os
+import tempfile
+
+# Set page config
+st.set_page_config(page_title="Free Audio-to-Text App", page_icon="🎙️")
+
+st.title("🎙️ Free Audio-to-Text App")
+st.markdown("Powered by **faster-whisper** (Open Source). No paid APIs used.")
+
+# Sidebar for settings
+st.sidebar.header("Settings")
+model_size = st.sidebar.selectbox(
+    "Select Model Size",
+    ["tiny", "base", "small", "medium", "large-v3"],
+    index=2,
+    help
